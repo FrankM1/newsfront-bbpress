@@ -1,0 +1,8 @@
+.ftppass
+.sass-cache
+node_modules
+bower_components
+*.esproj
+.DS_STORE
+Thumbs.db
+npm-debug.log
