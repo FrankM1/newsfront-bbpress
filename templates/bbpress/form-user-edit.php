@@ -11,32 +11,32 @@
 
 <form id="bbp-your-profile" action="<?php bbp_user_profile_edit_url( bbp_get_displayed_user_id() ); ?>" method="post">
 
-	<h4 class="entry-title"><?php _e( 'Name', 'radium' ) ?></h4>
+	<h4 class="entry-title"><?php _e( 'Name', 'newsfront-bbpress' ) ?></h4>
 
 	<?php do_action( 'bbp_user_edit_before' ); ?>
 
 	<fieldset class="bbp-form">
-		<legend><?php _e( 'Name', 'radium' ) ?></legend>
+		<legend><?php _e( 'Name', 'newsfront-bbpress' ) ?></legend>
 
 		<?php do_action( 'bbp_user_edit_before_name' ); ?>
 
 		<div>
-			<label for="first_name"><?php _e( 'First Name', 'radium' ) ?></label>
+			<label for="first_name"><?php _e( 'First Name', 'newsfront-bbpress' ) ?></label>
 			<input type="text" name="first_name" id="first_name" value="<?php echo esc_attr( bbp_get_displayed_user_field( 'first_name' ) ); ?>" class="regular-text" tabindex="<?php bbp_tab_index(); ?>" />
 		</div>
 
 		<div>
-			<label for="last_name"><?php _e( 'Last Name', 'radium' ) ?></label>
+			<label for="last_name"><?php _e( 'Last Name', 'newsfront-bbpress' ) ?></label>
 			<input type="text" name="last_name" id="last_name" value="<?php echo esc_attr( bbp_get_displayed_user_field( 'last_name' ) ); ?>" class="regular-text" tabindex="<?php bbp_tab_index(); ?>" />
 		</div>
 
 		<div>
-			<label for="nickname"><?php _e( 'Nickname', 'radium' ); ?></label>
+			<label for="nickname"><?php _e( 'Nickname', 'newsfront-bbpress' ); ?></label>
 			<input type="text" name="nickname" id="nickname" value="<?php echo esc_attr( bbp_get_displayed_user_field( 'nickname' ) ); ?>" class="regular-text" tabindex="<?php bbp_tab_index(); ?>" />
 		</div>
 
 		<div>
-			<label for="display_name"><?php _e( 'Display name publicly as', 'radium' ) ?></label>
+			<label for="display_name"><?php _e( 'Display name publicly as', 'newsfront-bbpress' ) ?></label>
 
 			<?php bbp_edit_user_display_name(); ?>
 
@@ -46,15 +46,15 @@
 
 	</fieldset>
 
-	<h4 class="entry-title"><?php _e( 'Contact Info', 'radium' ) ?></h4>
+	<h4 class="entry-title"><?php _e( 'Contact Info', 'newsfront-bbpress' ) ?></h4>
 
 	<fieldset class="bbp-form">
-		<legend><?php _e( 'Contact Info', 'radium' ) ?></legend>
+		<legend><?php _e( 'Contact Info', 'newsfront-bbpress' ) ?></legend>
 
 		<?php do_action( 'bbp_user_edit_before_contact' ); ?>
 
 		<div>
-			<label for="url"><?php _e( 'Website', 'radium' ) ?></label>
+			<label for="url"><?php _e( 'Website', 'newsfront-bbpress' ) ?></label>
 			<input type="text" name="url" id="url" value="<?php echo esc_attr( bbp_get_displayed_user_field( 'user_url' ) ); ?>" class="regular-text code" tabindex="<?php bbp_tab_index(); ?>" />
 		</div>
 
@@ -71,38 +71,38 @@
 
 	</fieldset>
 
-	<h4 class="entry-title"><?php bbp_is_user_home_edit() ? _e( 'About Yourself', 'radium' ) : _e( 'About the user', 'radium' ); ?></h4>
+	<h4 class="entry-title"><?php bbp_is_user_home_edit() ? _e( 'About Yourself', 'newsfront-bbpress' ) : _e( 'About the user', 'newsfront-bbpress' ); ?></h4>
 
 	<fieldset class="bbp-form">
-		<legend><?php bbp_is_user_home_edit() ? _e( 'About Yourself', 'radium' ) : _e( 'About the user', 'radium' ); ?></legend>
+		<legend><?php bbp_is_user_home_edit() ? _e( 'About Yourself', 'newsfront-bbpress' ) : _e( 'About the user', 'newsfront-bbpress' ); ?></legend>
 
 		<?php do_action( 'bbp_user_edit_before_about' ); ?>
 
 		<div>
-			<label for="description"><?php _e( 'Biographical Info', 'radium' ); ?></label>
+			<label for="description"><?php _e( 'Biographical Info', 'newsfront-bbpress' ); ?></label>
 			<textarea name="description" id="description" rows="5" cols="30" tabindex="<?php bbp_tab_index(); ?>" class="auto-height"><?php echo esc_attr( bbp_get_displayed_user_field( 'description' ) ); ?></textarea>
-			<span class="description"><?php _e( 'Share a little biographical information to fill out your profile. This may be shown publicly.', 'radium' ); ?></span>
+			<span class="description"><?php _e( 'Share a little biographical information to fill out your profile. This may be shown publicly.', 'newsfront-bbpress' ); ?></span>
 		</div>
 
 		<?php do_action( 'bbp_user_edit_after_about' ); ?>
 
 	</fieldset>
 
-	<h4 class="entry-title"><?php _e( 'Account', 'radium' ) ?></h4>
+	<h4 class="entry-title"><?php _e( 'Account', 'newsfront-bbpress' ) ?></h4>
 
 	<fieldset class="bbp-form">
-		<legend><?php _e( 'Account', 'radium' ) ?></legend>
+		<legend><?php _e( 'Account', 'newsfront-bbpress' ) ?></legend>
 
 		<?php do_action( 'bbp_user_edit_before_account' ); ?>
 
 		<div>
-			<label for="user_login"><?php _e( 'Username', 'radium' ); ?></label>
+			<label for="user_login"><?php _e( 'Username', 'newsfront-bbpress' ); ?></label>
 			<input type="text" name="user_login" id="user_login" value="<?php echo esc_attr( bbp_get_displayed_user_field( 'user_login' ) ); ?>" disabled="disabled" class="regular-text" tabindex="<?php bbp_tab_index(); ?>" />
-			<span class="description"><?php _e( 'Usernames cannot be changed.', 'radium' ); ?></span>
+			<span class="description"><?php _e( 'Usernames cannot be changed.', 'newsfront-bbpress' ); ?></span>
 		</div>
 
 		<div>
-			<label for="email"><?php _e( 'Email', 'radium' ); ?></label>
+			<label for="email"><?php _e( 'Email', 'newsfront-bbpress' ); ?></label>
 
 			<input type="text" name="email" id="email" value="<?php echo esc_attr( bbp_get_displayed_user_field( 'user_email' ) ); ?>" class="regular-text" tabindex="<?php bbp_tab_index(); ?>" />
 
@@ -114,7 +114,7 @@
 
 				<span class="updated inline">
 
-					<?php printf( __( 'There is a pending email address change to <code>%1$s</code>. <a href="%2$s">Cancel</a>', 'radium' ), $new_email['newemail'], esc_url( self_admin_url( 'user.php?dismiss=' . bbp_get_current_user_id()  . '_new_email' ) ) ); ?>
+					<?php printf( __( 'There is a pending email address change to <code>%1$s</code>. <a href="%2$s">Cancel</a>', 'newsfront-bbpress' ), $new_email['newemail'], esc_url( self_admin_url( 'user.php?dismiss=' . bbp_get_current_user_id()  . '_new_email' ) ) ); ?>
 
 				</span>
 
@@ -123,23 +123,23 @@
 		</div>
 
 		<div id="password">
-			<label for="pass1"><?php _e( 'New Password', 'radium' ); ?></label>
+			<label for="pass1"><?php _e( 'New Password', 'newsfront-bbpress' ); ?></label>
 			<fieldset class="bbp-form">
 				<input type="password" name="pass1" id="pass1" size="16" value="" autocomplete="off" tabindex="<?php bbp_tab_index(); ?>" />
-				<span class="description"><?php _e( 'If you would like to change the password type a new one. Otherwise leave this blank.', 'radium' ); ?></span>
+				<span class="description"><?php _e( 'If you would like to change the password type a new one. Otherwise leave this blank.', 'newsfront-bbpress' ); ?></span>
 
 				<input type="password" name="pass2" id="pass2" size="16" value="" autocomplete="off" tabindex="<?php bbp_tab_index(); ?>" />
-				<span class="description"><?php _e( 'Type your new password again.', 'radium' ); ?></span><br />
+				<span class="description"><?php _e( 'Type your new password again.', 'newsfront-bbpress' ); ?></span><br />
 
 				<div id="pass-strength-result"></div>
-				<span class="description indicator-hint"><?php _e( 'Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! " ? $ % ^ &amp; ).', 'radium' ); ?></span>
+				<span class="description indicator-hint"><?php _e( 'Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! " ? $ % ^ &amp; ).', 'newsfront-bbpress' ); ?></span>
 			</fieldset>
 		</div>
 
 		<?php if ( current_user_can( 'edit_users' ) && ! bbp_is_user_home_edit() ) : ?>
 
 			<div>
-				<label for="role"><?php _e( 'Role:', 'radium' ) ?></label>
+				<label for="role"><?php _e( 'Role:', 'newsfront-bbpress' ) ?></label>
 
 				<?php bbp_edit_user_role(); ?>
 
@@ -150,10 +150,10 @@
 		<?php if ( is_multisite() && is_super_admin() && current_user_can( 'manage_network_options' ) ) : ?>
 
 			<div>
-				<label for="role"><?php _e( 'Super Admin', 'radium' ); ?></label>
+				<label for="role"><?php _e( 'Super Admin', 'newsfront-bbpress' ); ?></label>
 				<label>
 					<input type="checkbox" id="super_admin" name="super_admin"<?php checked( is_super_admin( bbp_get_displayed_user_id() ) ); ?> tabindex="<?php bbp_tab_index(); ?>" />
-					<?php _e( 'Grant this user super admin privileges for the Network.', 'radium' ); ?>
+					<?php _e( 'Grant this user super admin privileges for the Network.', 'newsfront-bbpress' ); ?>
 				</label>
 			</div>
 
@@ -166,12 +166,12 @@
 	<?php do_action( 'bbp_user_edit_after' ); ?>
 
 	<fieldset class="submit">
-		<legend><?php _e( 'Save Changes', 'radium' ); ?></legend>
+		<legend><?php _e( 'Save Changes', 'newsfront-bbpress' ); ?></legend>
 		<div>
 
 			<?php bbp_edit_user_form_fields(); ?>
 
-			<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_user_edit_submit" name="bbp_user_edit_submit" class="button submit user-submit"><?php bbp_is_user_home_edit() ? _e( 'Update Profile', 'radium' ) : _e( 'Update User', 'radium' ); ?></button>
+			<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_user_edit_submit" name="bbp_user_edit_submit" class="button submit user-submit"><?php bbp_is_user_home_edit() ? _e( 'Update Profile', 'newsfront-bbpress' ) : _e( 'Update User', 'newsfront-bbpress' ); ?></button>
 		</div>
 	</fieldset>
 

@@ -57,8 +57,8 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         $framework = radium_framework();
 
-        $this->id      = 'radium';
-        $this->name    = __( 'NewsFront (bbPress)', 'radium' ) ;
+        $this->id      = 'newsfront-bbpress';
+        $this->name    = __( 'NewsFront (bbPress)', 'newsfront-bbpress' ) ;
         $this->version = bbp_get_version();
         $this->dir     = $framework->theme_dir;
         $this->url     = $framework->theme_url;
@@ -202,7 +202,7 @@ class BBP_NewsFront extends BBP_Theme_Compat {
         if ( bbp_is_single_forum() ) {
             wp_localize_script( 'bbpress-forum', 'bbpForumJS', array(
                 'bbp_ajaxurl'        => bbp_get_ajax_url(),
-                'generic_ajax_error' => __( 'Something went wrong. Refresh your browser and try again.', 'radium' ),
+                'generic_ajax_error' => __( 'Something went wrong. Refresh your browser and try again.', 'newsfront-bbpress' ),
                 'is_user_logged_in'  => is_user_logged_in(),
                 'subs_nonce'         => wp_create_nonce( 'toggle-subscription_' . get_the_ID() )
             ) );
@@ -211,7 +211,7 @@ class BBP_NewsFront extends BBP_Theme_Compat {
         } elseif ( bbp_is_single_topic() ) {
             wp_localize_script( 'bbpress-topic', 'bbpTopicJS', array(
                 'bbp_ajaxurl'        => bbp_get_ajax_url(),
-                'generic_ajax_error' => __( 'Something went wrong. Refresh your browser and try again.', 'radium' ),
+                'generic_ajax_error' => __( 'Something went wrong. Refresh your browser and try again.', 'newsfront-bbpress' ),
                 'is_user_logged_in'  => is_user_logged_in(),
                 'fav_nonce'          => wp_create_nonce( 'toggle-favorite_' .     get_the_ID() ),
                 'subs_nonce'         => wp_create_nonce( 'toggle-subscription_' . get_the_ID() )
@@ -239,12 +239,12 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if subscriptions are not active
         if ( ! bbp_is_subscriptions_active() ) {
-            bbp_ajax_response( false, __( 'Subscriptions are no longer active.', 'radium' ), 300 );
+            bbp_ajax_response( false, __( 'Subscriptions are no longer active.', 'newsfront-bbpress' ), 300 );
         }
 
         // Bail if user is not logged in
         if ( ! is_user_logged_in() ) {
-            bbp_ajax_response( false, __( 'Please login to subscribe to this forum.', 'radium' ), 301 );
+            bbp_ajax_response( false, __( 'Please login to subscribe to this forum.', 'newsfront-bbpress' ), 301 );
         }
 
         // Get user and forum data
@@ -253,7 +253,7 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if user cannot add favorites for this user
         if ( ! current_user_can( 'edit_user', $user_id ) ) {
-            bbp_ajax_response( false, __( 'You do not have permission to do this.', 'radium' ), 302 );
+            bbp_ajax_response( false, __( 'You do not have permission to do this.', 'newsfront-bbpress' ), 302 );
         }
 
         // Get the forum
@@ -261,12 +261,12 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if forum cannot be found
         if ( empty( $forum ) ) {
-            bbp_ajax_response( false, __( 'The forum could not be found.', 'radium' ), 303 );
+            bbp_ajax_response( false, __( 'The forum could not be found.', 'newsfront-bbpress' ), 303 );
         }
 
         // Bail if user did not take this action
         if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'toggle-subscription_' . $forum->ID ) ) {
-            bbp_ajax_response( false, __( 'Are you sure you meant to do that?', 'radium' ), 304 );
+            bbp_ajax_response( false, __( 'Are you sure you meant to do that?', 'newsfront-bbpress' ), 304 );
         }
 
         // Take action
@@ -274,7 +274,7 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if action failed
         if ( empty( $status ) ) {
-            bbp_ajax_response( false, __( 'The request was unsuccessful. Please try again.', 'radium' ), 305 );
+            bbp_ajax_response( false, __( 'The request was unsuccessful. Please try again.', 'newsfront-bbpress' ), 305 );
         }
 
         // Put subscription attributes in convenient array
@@ -307,12 +307,12 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if favorites are not active
         if ( ! bbp_is_favorites_active() ) {
-            bbp_ajax_response( false, __( 'Favorites are no longer active.', 'radium' ), 300 );
+            bbp_ajax_response( false, __( 'Favorites are no longer active.', 'newsfront-bbpress' ), 300 );
         }
 
         // Bail if user is not logged in
         if ( ! is_user_logged_in() ) {
-            bbp_ajax_response( false, __( 'Please login to make this topic a favorite.', 'radium' ), 301 );
+            bbp_ajax_response( false, __( 'Please login to make this topic a favorite.', 'newsfront-bbpress' ), 301 );
         }
 
         // Get user and topic data
@@ -321,7 +321,7 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if user cannot add favorites for this user
         if ( ! current_user_can( 'edit_user', $user_id ) ) {
-            bbp_ajax_response( false, __( 'You do not have permission to do this.', 'radium' ), 302 );
+            bbp_ajax_response( false, __( 'You do not have permission to do this.', 'newsfront-bbpress' ), 302 );
         }
 
         // Get the topic
@@ -329,12 +329,12 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if topic cannot be found
         if ( empty( $topic ) ) {
-            bbp_ajax_response( false, __( 'The topic could not be found.', 'radium' ), 303 );
+            bbp_ajax_response( false, __( 'The topic could not be found.', 'newsfront-bbpress' ), 303 );
         }
 
         // Bail if user did not take this action
         if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'toggle-favorite_' . $topic->ID ) ) {
-            bbp_ajax_response( false, __( 'Are you sure you meant to do that?', 'radium' ), 304 );
+            bbp_ajax_response( false, __( 'Are you sure you meant to do that?', 'newsfront-bbpress' ), 304 );
         }
 
         // Take action
@@ -342,7 +342,7 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if action failed
         if ( empty( $status ) ) {
-            bbp_ajax_response( false, __( 'The request was unsuccessful. Please try again.', 'radium' ), 305 );
+            bbp_ajax_response( false, __( 'The request was unsuccessful. Please try again.', 'newsfront-bbpress' ), 305 );
         }
 
         // Put subscription attributes in convenient array
@@ -375,12 +375,12 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if subscriptions are not active
         if ( ! bbp_is_subscriptions_active() ) {
-            bbp_ajax_response( false, __( 'Subscriptions are no longer active.', 'radium' ), 300 );
+            bbp_ajax_response( false, __( 'Subscriptions are no longer active.', 'newsfront-bbpress' ), 300 );
         }
 
         // Bail if user is not logged in
         if ( ! is_user_logged_in() ) {
-            bbp_ajax_response( false, __( 'Please login to subscribe to this topic.', 'radium' ), 301 );
+            bbp_ajax_response( false, __( 'Please login to subscribe to this topic.', 'newsfront-bbpress' ), 301 );
         }
 
         // Get user and topic data
@@ -389,7 +389,7 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if user cannot add favorites for this user
         if ( ! current_user_can( 'edit_user', $user_id ) ) {
-            bbp_ajax_response( false, __( 'You do not have permission to do this.', 'radium' ), 302 );
+            bbp_ajax_response( false, __( 'You do not have permission to do this.', 'newsfront-bbpress' ), 302 );
         }
 
         // Get the topic
@@ -397,12 +397,12 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if topic cannot be found
         if ( empty( $topic ) ) {
-            bbp_ajax_response( false, __( 'The topic could not be found.', 'radium' ), 303 );
+            bbp_ajax_response( false, __( 'The topic could not be found.', 'newsfront-bbpress' ), 303 );
         }
 
         // Bail if user did not take this action
         if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'toggle-subscription_' . $topic->ID ) ) {
-            bbp_ajax_response( false, __( 'Are you sure you meant to do that?', 'radium' ), 304 );
+            bbp_ajax_response( false, __( 'Are you sure you meant to do that?', 'newsfront-bbpress' ), 304 );
         }
 
         // Take action
@@ -410,7 +410,7 @@ class BBP_NewsFront extends BBP_Theme_Compat {
 
         // Bail if action failed
         if ( empty( $status ) ) {
-            bbp_ajax_response( false, __( 'The request was unsuccessful. Please try again.', 'radium' ), 305 );
+            bbp_ajax_response( false, __( 'The request was unsuccessful. Please try again.', 'newsfront-bbpress' ), 305 );
         }
 
         // Put subscription attributes in convenient array

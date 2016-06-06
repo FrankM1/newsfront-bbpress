@@ -45,7 +45,7 @@
 
                 <?php if ( bbp_get_forum_title( bbp_get_topic_forum_id() ) ) { ?>
 
-                    <span class="bbp-topic-started-in"><?php printf( __( 'in: <a href="%1$s">%2$s</a>', 'radium' ), bbp_get_forum_permalink( bbp_get_topic_forum_id() ), bbp_get_forum_title( bbp_get_topic_forum_id() ) ); ?></span>
+                    <span class="bbp-topic-started-in"><?php printf( __( 'in: <a href="%1$s">%2$s</a>', 'newsfront-bbpress' ), bbp_get_forum_permalink( bbp_get_topic_forum_id() ), bbp_get_forum_title( bbp_get_topic_forum_id() ) ); ?></span>
                 <?php } ?>
 
                 <?php do_action( 'bbp_theme_after_topic_started_in' ); ?>
@@ -76,7 +76,7 @@
 
             <?php do_action( 'bbp_theme_before_topic_freshness_author' ); ?>
 
-                <span class="bbp-topic-freshness-author"><?php printf( __( 'Last post by%1$s%2$s', 'radium' ),
+                <span class="bbp-topic-freshness-author"><?php printf( __( 'Last post by%1$s%2$s', 'newsfront-bbpress' ),
                     bbp_get_author_link( array( 'post_id' => bbp_get_topic_last_active_id(), 'size' => 14 ) ).'<br>',
                     bbp_get_topic_freshness_link()
             ); ?></span>

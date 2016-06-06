@@ -13,7 +13,7 @@
 
 	<div class="bbp-meta">
 
-		<?php printf( __( '%1$s at %2$s', 'radium' ), get_the_date(), esc_attr( get_the_time() ) ); ?>
+		<?php printf( __( '%1$s at %2$s', 'newsfront-bbpress' ), get_the_date(), esc_attr( get_the_time() ) ); ?>
 
 		<a href="<?php bbp_reply_url(); ?>" title="<?php bbp_reply_title(); ?>" class="bbp-reply-permalink">#<?php bbp_reply_id(); ?></a>
 

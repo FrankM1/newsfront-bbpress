@@ -15,13 +15,13 @@
 
 	<li class="bbp-header">
 
-		<div class="bbp-reply-author"><?php  _e( 'Author',  'radium' ); ?></div><!-- .bbp-reply-author -->
+		<div class="bbp-reply-author"><?php  _e( 'Author',  'newsfront-bbpress' ); ?></div><!-- .bbp-reply-author -->
 
 		<div class="bbp-reply-content">
 
 			<?php if ( !bbp_show_lead_topic() ) : ?>
 
-				<?php _e( 'Posts', 'radium' ); ?>
+				<?php _e( 'Posts', 'newsfront-bbpress' ); ?>
 
 				<?php bbp_user_subscribe_link(); ?>
 
@@ -29,7 +29,7 @@
 
 			<?php else : ?>
 
-				<?php _e( 'Replies', 'radium' ); ?>
+				<?php _e( 'Replies', 'newsfront-bbpress' ); ?>
 
 			<?php endif; ?>
 
@@ -49,17 +49,17 @@
 
 	<li class="bbp-footer">
 
-		<div class="bbp-reply-author"><?php  _e( 'Author',  'radium' ); ?></div>
+		<div class="bbp-reply-author"><?php  _e( 'Author',  'newsfront-bbpress' ); ?></div>
 
 		<div class="bbp-reply-content">
 
 			<?php if ( !bbp_show_lead_topic() ) : ?>
 
-				<?php _e( 'Posts', 'radium' ); ?>
+				<?php _e( 'Posts', 'newsfront-bbpress' ); ?>
 
 			<?php else : ?>
 
-				<?php _e( 'Replies', 'radium' ); ?>
+				<?php _e( 'Replies', 'newsfront-bbpress' ); ?>
 
 			<?php endif; ?>
 

@@ -110,7 +110,7 @@ module.exports = function(grunt) {
         checktextdomain: {
             options: {
                 correct_domain: false,
-                text_domain: 'carlton',
+                text_domain: 'newsfront-bbpress',
                 keywords: [
                     '__:1,2d',
                     '_e:1,2d',
@@ -148,7 +148,7 @@ module.exports = function(grunt) {
 
         addtextdomain: {
             options: {
-                textdomain: 'carlton', // Project text domain.
+                textdomain: 'newsfront-bbpress', // Project text domain.
             },
 
             target: {
@@ -162,18 +162,15 @@ module.exports = function(grunt) {
             target: {
                 options: {
                     domainPath: 'languages',
-                    mainFile: 'style.css',
-                    potFilename: 'carlton.pot',
-                    exclude: [
-                        'includes/extensions/redux-framework/.*'
-                    ],
+                    mainFile: 'plugin.php',
+                    potFilename: 'newsfront-bbpress.pot',
                     processPot: function(pot) {
                         pot.headers['report-msgid-bugs-to'] = 'frank@radiumthemes.com';
                         pot.headers['language-team'] = 'Radium Themes <http://radiumthemes.com>';
                         pot.headers['Last-Translator'] = 'Franklin Gitonga <frank@radiumthemes.com>';
                         return pot;
                     },
-                    type: 'wp-theme'
+                    type: 'wp-plugin'
                 }
             }
         },

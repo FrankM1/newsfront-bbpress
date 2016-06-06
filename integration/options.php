@@ -20,14 +20,14 @@ add_filter( 'radium_options_sections', 'radium_options_bbpress_sections', 99 );
 function radium_options_bbpress_sections( $sections ) {
 
     $sections[] = array(
-        'title' => esc_html__( 'bbPress', 'newsfront' ),
+        'title' => esc_html__( 'bbPress', 'newsfront-bbpress' ),
         'fields' => array(
 
             array(
                 'id'        => 'bbp_forum_layout',
                 'type'      => 'image_select',
-                'title'     => esc_html__( 'Forum Layout', 'newsfront' ),
-                'sub_desc'  => esc_html__( 'Select a layout for the forum.', 'newsfront' ),
+                'title'     => esc_html__( 'Forum Layout', 'newsfront-bbpress' ),
+                'sub_desc'  => esc_html__( 'Select a layout for the forum.', 'newsfront-bbpress' ),
                 'options'   => radium_get_layouts_for_options(),
                 'default'   => 'content-sidebar',
             ),

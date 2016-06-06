@@ -23,16 +23,16 @@
 		$displayed_user = get_user_by( 'email', bbp_get_displayed_user_field( 'user_email' ) ); ?>
 
 		<?php if( bbp_get_displayed_user_field( 'description' ) ) {
-			$bio_title = bbp_is_user_home_edit() ? sprintf( __( 'Your bio', 'radium' ), bbp_get_displayed_user_field( 'display_name' ) ) : sprintf( __( 'Bio', 'radium' ), bbp_get_displayed_user_field( 'display_name' ) ); ?>
+			$bio_title = bbp_is_user_home_edit() ? sprintf( __( 'Your bio', 'newsfront-bbpress' ), bbp_get_displayed_user_field( 'display_name' ) ) : sprintf( __( 'Bio', 'newsfront-bbpress' ), bbp_get_displayed_user_field( 'display_name' ) ); ?>
 			<h4><?php echo $bio_title; ?></h4>
 			<p><?php echo bbp_get_displayed_user_field( 'description' ); ?></p>
 		<?php } ?>
 
-		<div><strong><?php _e( 'Joined: ', 'radium' ); ?></strong>
+		<div><strong><?php _e( 'Joined: ', 'newsfront-bbpress' ); ?></strong>
 		<?php $joined_ago = bbp_get_time_since( bbp_convert_date( $displayed_user->user_registered ) ); ?>
 		<span><?php echo $joined_ago; ?></span></div>
 
-		<div><strong><?php _e( 'Status: ', 'radium' ); ?></strong>
+		<div><strong><?php _e( 'Status: ', 'newsfront-bbpress' ); ?></strong>
 		<?php
 
         if ( $displayed_user ) {
@@ -41,11 +41,11 @@
 
     		if( $user_role == 'bbp_participant' ) {
 
-    			$user_role = __( 'Forum participant', 'radium' );
+    			$user_role = __( 'Forum participant', 'newsfront-bbpress' );
 
     		} elseif( $user_role == 'bbp_moderator' ) {
 
-    			$user_role = __( 'Forum moderator', 'radium' );
+    			$user_role = __( 'Forum moderator', 'newsfront-bbpress' );
 
     		}
 
@@ -58,7 +58,7 @@
 		if ( $displayed_user ) $user_url = $displayed_user->user_url;
 		if( !empty( $user_url ) ) :
 		?>
-			<div><strong><?php _e( 'Homepage: ', 'radium' ); ?></strong>
+			<div><strong><?php _e( 'Homepage: ', 'newsfront-bbpress' ); ?></strong>
 			<p><a href="<?php echo $user_url; ?>"><?php echo $user_url; ?></a></p></div>
 		<?php endif; ?>
 

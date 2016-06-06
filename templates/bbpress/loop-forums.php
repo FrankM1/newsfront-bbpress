@@ -16,10 +16,10 @@
 	<li class="bbp-header">
 
 		<ul class="forum-titles">
-			<li class="bbp-forum-info"><?php _e( 'Forum', 'radium' ); ?></li>
-			<li class="bbp-forum-topic-count"><?php _e( 'Topics', 'radium' ); ?></li>
-			<li class="bbp-forum-reply-count"><?php bbp_show_lead_topic() ? _e( 'Replies', 'radium' ) : _e( 'Posts', 'radium' ); ?></li>
-			<li class="bbp-forum-freshness"><?php _e( 'Freshness', 'radium' ); ?></li>
+			<li class="bbp-forum-info"><?php _e( 'Forum', 'newsfront-bbpress' ); ?></li>
+			<li class="bbp-forum-topic-count"><?php _e( 'Topics', 'newsfront-bbpress' ); ?></li>
+			<li class="bbp-forum-reply-count"><?php bbp_show_lead_topic() ? _e( 'Replies', 'newsfront-bbpress' ) : _e( 'Posts', 'newsfront-bbpress' ); ?></li>
+			<li class="bbp-forum-freshness"><?php _e( 'Freshness', 'newsfront-bbpress' ); ?></li>
 		</ul>
 
 	</li><!-- .bbp-header -->

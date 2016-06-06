@@ -58,15 +58,15 @@ function radium_bbpress_page_title( $header_title ) {
 
         // If capable, include a link to edit the tag
         if ( current_user_can( 'manage_topic_tags' ) ) {
-            $tag_data[] = '<a href="' . esc_url( bbp_get_topic_tag_edit_link() ) . '" class="bbp-edit-topic-tag-link">' . esc_html__( '(Edit)', 'bbpress' ) . '</a>';
+            $tag_data[] = '<a href="' . esc_url( bbp_get_topic_tag_edit_link() ) . '" class="bbp-edit-topic-tag-link">' . esc_html__( '(Edit)', 'newsfront-bbpress' ) . '</a>';
         }
 
         // Implode the results of the tag data
-        $header_title = sprintf( __( 'Topic Tag: %s', 'bbpress' ), implode( ' ', $tag_data ) );
+        $header_title = sprintf( __( 'Topic Tag: %s', 'newsfront-bbpress' ), implode( ' ', $tag_data ) );
 
     // Edit Topic Tag
     } elseif ( bbp_is_topic_tag_edit() ) {
-        $header_title = __( 'Edit', 'bbpress' );
+        $header_title = __( 'Edit', 'newsfront-bbpress' );
 
     }
 

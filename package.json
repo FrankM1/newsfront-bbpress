@@ -1,8 +1,8 @@
 {
   "name": "newsfront-bbpress",
   "version": "1.0.0",
-  "title": "NewsFront",
-  "description": "A powerful Blog, Magazine and News Theme for WordPress",
+  "title": "newsfront-bbpress",
+  "description": "A bbPress compatibility plugin for Newsfront",
   "author": "Franklin Gitonga <frank@radiumthemes.com>",
   "license": "GPLv2",
   "private": true,

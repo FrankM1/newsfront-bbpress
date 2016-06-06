@@ -14,7 +14,7 @@
 	<?php bbp_set_query_name( 'bbp_user_profile_topics_created' ); ?>
 
 	<div id="bbp-author-topics-started" class="bbp-author-topics-started">
-		<h2 class="entry-title"><?php _e( 'Forum Topics Created', 'radium' ); ?></h2>
+		<h2 class="entry-title"><?php _e( 'Forum Topics Created', 'newsfront-bbpress' ); ?></h2>
 		<div class="bbp-user-section">
 
 			<?php if ( bbp_get_user_topics_started() ) : ?>
@@ -27,7 +27,7 @@
 
 			<?php else : ?>
 
-				<p><?php bbp_is_user_home() ? _e( 'You have not created any topics.', 'radium' ) : _e( 'This user has not created any topics.', 'radium' ); ?></p>
+				<p><?php bbp_is_user_home() ? _e( 'You have not created any topics.', 'newsfront-bbpress' ) : _e( 'This user has not created any topics.', 'newsfront-bbpress' ); ?></p>
 
 			<?php endif; ?>
 

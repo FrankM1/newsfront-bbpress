@@ -15,11 +15,11 @@
 
 	<li class="bbp-header">
 
-		<div class="bbp-topic-author"><?php  _e( 'Creator',  'radium' ); ?></div><!-- .bbp-topic-author -->
+		<div class="bbp-topic-author"><?php  _e( 'Creator',  'newsfront-bbpress' ); ?></div><!-- .bbp-topic-author -->
 
 		<div class="bbp-topic-content">
 
-			<?php _e( 'Topic', 'radium' ); ?>
+			<?php _e( 'Topic', 'newsfront-bbpress' ); ?>
 
 			<?php bbp_user_subscribe_link(); ?>
 
@@ -35,7 +35,7 @@
 
 			<div class="bbp-meta">
 
-				<?php printf( __( '%1$s at %2$s', 'radium' ), get_the_date(), esc_attr( get_the_time() ) ); ?>
+				<?php printf( __( '%1$s at %2$s', 'newsfront-bbpress' ), get_the_date(), esc_attr( get_the_time() ) ); ?>
 
 				<a href="<?php bbp_topic_permalink(); ?>" title="<?php bbp_topic_title(); ?>" class="bbp-topic-permalink">#<?php bbp_topic_id(); ?></a>
 
@@ -87,11 +87,11 @@
 
 	<li class="bbp-footer">
 
-		<div class="bbp-topic-author"><?php  _e( 'Creator',  'radium' ); ?></div>
+		<div class="bbp-topic-author"><?php  _e( 'Creator',  'newsfront-bbpress' ); ?></div>
 
 		<div class="bbp-topic-content">
 
-			<?php _e( 'Topic', 'radium' ); ?>
+			<?php _e( 'Topic', 'newsfront-bbpress' ); ?>
 			
 		</div><!-- .bbp-topic-content -->
 

@@ -10,5 +10,5 @@
 ?>
 
 <div class="bbp-template-notice info">
-	<p><?php _e( 'You are already logged in.', 'radium' ); ?></p>
+	<p><?php _e( 'You are already logged in.', 'newsfront-bbpress' ); ?></p>
 </div>

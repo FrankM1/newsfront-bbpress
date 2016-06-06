@@ -10,10 +10,10 @@
 ?>
 
 <div id="forum-private" class="bbp-forum-content">
-	<h1 class="entry-title"><?php _e( 'Private', 'radium' ); ?></h1>
+	<h1 class="entry-title"><?php _e( 'Private', 'newsfront-bbpress' ); ?></h1>
 	<div class="entry-content">
 		<div class="bbp-template-notice info">
-			<p><?php _e( 'You do not have permission to view this forum.', 'radium' ); ?></p>
+			<p><?php _e( 'You do not have permission to view this forum.', 'newsfront-bbpress' ); ?></p>
 		</div>
 	</div>
 </div><!-- #forum-private -->

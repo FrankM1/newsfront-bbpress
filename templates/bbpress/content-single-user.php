@@ -17,7 +17,7 @@
     bbp_get_template_part( 'bbpress/user', 'details' );
     ?>
     <?php if ( bbp_is_user_home() || current_user_can( 'edit_users' ) ) : ?>
-        <a href="<?php bbp_user_profile_edit_url(); ?>"><?php _e( 'Edit', 'radium' ); ?></a>
+        <a href="<?php bbp_user_profile_edit_url(); ?>"><?php _e( 'Edit', 'newsfront-bbpress' ); ?></a>
     <?php endif; ?>
 </div><!-- end .bbp-user-details -->
 
@@ -26,12 +26,12 @@
         <div class="radium-tab-inner">
             <ul class="radium-user-tab-nav clearfix">
                 <?php if ( bbp_is_subscriptions_active() && ( bbp_is_user_home() || current_user_can( 'edit_users' ) ) ) : ?>
-                    <li><a href="#subscriptions" class="tab-control"><?php _e( 'Subscriptions', 'radium' ); ?></a></li>
+                    <li><a href="#subscriptions" class="tab-control"><?php _e( 'Subscriptions', 'newsfront-bbpress' ); ?></a></li>
                 <?php endif; ?>
-                <li><a href="#favorites" class="tab-control"><?php _e( 'Favorite threads', 'radium' ); ?></a></li>
-                <li><a href="#topics-started" class="tab-control"><?php _e( 'Created threads', 'radium' ); ?></a></li>
+                <li><a href="#favorites" class="tab-control"><?php _e( 'Favorite threads', 'newsfront-bbpress' ); ?></a></li>
+                <li><a href="#topics-started" class="tab-control"><?php _e( 'Created threads', 'newsfront-bbpress' ); ?></a></li>
                 <?php if(class_exists('BBP_Mark_As_Read') ): ?>
-                    <li><a href="#unread-topics" class="tab-control"><?php _e( 'Unread Topics', 'radium' ); ?></a></li>
+                    <li><a href="#unread-topics" class="tab-control"><?php _e( 'Unread Topics', 'newsfront-bbpress' ); ?></a></li>
                 <?php endif; ?>
              </ul>
 

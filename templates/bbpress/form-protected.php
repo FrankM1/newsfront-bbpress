@@ -11,7 +11,7 @@
 
 <div id="bbpress-forums">
 	<fieldset class="bbp-form" id="bbp-protected">
-		<Legend><?php _e( 'Protected', 'radium' ); ?></legend>
+		<Legend><?php _e( 'Protected', 'newsfront-bbpress' ); ?></legend>
 
 		<?php echo get_the_password_form(); ?>
 

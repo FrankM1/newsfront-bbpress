@@ -46,7 +46,7 @@
         <?php if ( bbp_get_author_link( array( 'post_id' => bbp_get_forum_last_active_id(), 'type' => 'name' ) ) ) { ?>
         <p class="bbp-topic-meta">
 
-            <span class="bbp-topic-freshness-author"><?php printf( __( 'Last post by %1$s %2$s', 'radium' ),
+            <span class="bbp-topic-freshness-author"><?php printf( __( 'Last post by %1$s %2$s', 'newsfront-bbpress' ),
                 bbp_get_author_link( array( 'post_id' => bbp_get_forum_last_active_id(), 'type' => 'name' ) ).'<br>',
                 bbp_get_forum_last_active_time()
         ); ?></span>

@@ -10,5 +10,5 @@
 ?>
 
 <div class="bbp-template-notice">
-	<p><?php _e( 'Oh bother! No forums were found here!', 'radium' ); ?></p>
+	<p><?php _e( 'Oh bother! No forums were found here!', 'newsfront-bbpress' ); ?></p>
 </div>

@@ -19,8 +19,8 @@ function radium_bbpress_init_sidebars() {
 
     radium_register_widget_area( array(
         'id'          => 'sidebar-bbpress',
-        'name'        => __( 'Forum Sidebar', 'bbpress-radium-extend' ),
-        'description' => __( 'This is the primary sidebar used on the forums.', 'bbpress-radium-extend' )
+        'name'        => __( 'Forum Sidebar', 'newsfront-bbpress' ),
+        'description' => __( 'This is the primary sidebar used on the forums.', 'newsfront-bbpress' )
         )
     );
 }
@@ -35,11 +35,11 @@ function radium_bbpress_widget_area_content() {
      echo '<div class="widget widget_text"><div class="widget-wrap">';
 
          echo '<div class="section-title"><h4 class="widget-title">';
-             __( 'Forum Sidebar Widget Area', 'bbpress-radium-extend' );
+             __( 'Forum Sidebar Widget Area', 'newsfront-bbpress' );
          echo '</h4></div>';
 
          echo '<div class="textwidget"><p>';
-             printf( __( 'This is the Forum Sidebar Widget Area. You can add content to this area by visiting your <a href="%s">Widgets Panel</a> and adding new widgets to this area.', 'bbpress-radium-extend' ), admin_url( 'widgets.php' ) );
+             printf( __( 'This is the Forum Sidebar Widget Area. You can add content to this area by visiting your <a href="%s">Widgets Panel</a> and adding new widgets to this area.', 'newsfront-bbpress' ), admin_url( 'widgets.php' ) );
          echo '</p></div>';
      echo '</div></div>';
 
@@ -57,7 +57,7 @@ function radium_bbpress_widget_area_content() {
  function radium_do_bbpress_sidebar() {
 
      if ( ! dynamic_sidebar( 'sidebar-bbpress' ) && current_user_can( 'edit_theme_options' ) ) {
-         radium_bbpress_widget_area_content( esc_html__( 'Forum Sidebar Widget Area', 'newsfront' ) );
+         radium_bbpress_widget_area_content( esc_html__( 'Forum Sidebar Widget Area', 'newsfront-bbpress' ) );
      }
 
  }

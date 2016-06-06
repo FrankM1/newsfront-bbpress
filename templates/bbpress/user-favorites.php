@@ -14,7 +14,7 @@
 	<?php bbp_set_query_name( 'bbp_user_profile_favorites' ); ?>
 
 	<div id="bbp-author-favorites" class="bbp-author-favorites">
-		<h2 class="entry-title"><?php _e( 'Favorite Forum Topics', 'radium' ); ?></h2>
+		<h2 class="entry-title"><?php _e( 'Favorite Forum Topics', 'newsfront-bbpress' ); ?></h2>
 		<div class="bbp-user-section">
 
 			<?php if ( bbp_get_user_favorites() ) : ?>
@@ -27,7 +27,7 @@
 
 			<?php else : ?>
 
-				<p><?php bbp_is_user_home() ? _e( 'You currently have no favorite topics.', 'radium' ) : _e( 'This user has no favorite topics.', 'radium' ); ?></p>
+				<p><?php bbp_is_user_home() ? _e( 'You currently have no favorite topics.', 'newsfront-bbpress' ) : _e( 'This user has no favorite topics.', 'newsfront-bbpress' ); ?></p>
 
 			<?php endif; ?>
 
