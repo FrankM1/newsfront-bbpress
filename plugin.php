@@ -3,7 +3,7 @@
  * Plugin Name: Newsfront bbPress
  * Plugin URI:  http://radiumthemes.com/plugins/newsfront-bbpress/
  * Description: Provides basic compaitibility between bbPress and the <a href="http://themeforest.net/item/newsfront-blog-news-editorial-ecommerce-wordpress-theme/15182108?ref=RadiumThemes">Newsfront Theme</a>.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Franklin Gitonga
  * Author URI:  http://www.radiumthemes.com
  *
