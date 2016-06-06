@@ -1,0 +1,859 @@
+# Copyright (C) 2016 Franklin Gitonga
+# This file is distributed under the same license as the Newsfront bbPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Newsfront bbPress 1.0.0\n"
+"Report-Msgid-Bugs-To: frank@radiumthemes.com\n"
+"POT-Creation-Date: 2016-06-06 21:33:11+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-06-07 01:03+0300\n"
+"Last-Translator: \n"
+"Language-Team: Radium Themes <http://radiumthemes.com>\n"
+"X-Generator: Poedit 1.5.7\n"
+"Last-Translator: Franklin Gitonga <frank@radiumthemes.com>\n"
+
+#: integration/options.php:23
+msgid "bbPress"
+msgstr ""
+
+#: integration/options.php:29
+msgid "Forum Layout"
+msgstr "Forum Disposition"
+
+#: integration/options.php:30
+msgid "Select a layout for the forum."
+msgstr "Sélectionnez une mise en page pour le forum."
+
+#: integration/page-title.php:61
+msgid "(Edit)"
+msgstr ""
+
+#: integration/page-title.php:65
+msgid "Topic Tag: %s"
+msgstr ""
+
+#: integration/page-title.php:69
+#: templates/bbpress/content-single-user-edit.php:39
+#: templates/bbpress/content-single-user.php:20
+msgid "Edit"
+msgstr ""
+
+#: integration/widgetize.php:22
+msgid "Forum Sidebar"
+msgstr ""
+
+#: integration/widgetize.php:23
+msgid "This is the primary sidebar used on the forums."
+msgstr ""
+
+#: integration/widgetize.php:38 integration/widgetize.php:60
+msgid "Forum Sidebar Widget Area"
+msgstr ""
+
+#: integration/widgetize.php:42
+msgid ""
+"This is the Forum Sidebar Widget Area. You can add content to this area by "
+"visiting your <a href=\"%s\">Widgets Panel</a> and adding new widgets to "
+"this area."
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:61
+msgid "NewsFront (bbPress)"
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:205
+#: templates/bbpress/bbpress-functions.php:214
+msgid "Something went wrong. Refresh your browser and try again."
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:242
+#: templates/bbpress/bbpress-functions.php:378
+msgid "Subscriptions are no longer active."
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:247
+msgid "Please login to subscribe to this forum."
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:256
+#: templates/bbpress/bbpress-functions.php:324
+#: templates/bbpress/bbpress-functions.php:392
+msgid "You do not have permission to do this."
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:264
+msgid "The forum could not be found."
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:269
+#: templates/bbpress/bbpress-functions.php:337
+#: templates/bbpress/bbpress-functions.php:405
+msgid "Are you sure you meant to do that?"
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:277
+#: templates/bbpress/bbpress-functions.php:345
+#: templates/bbpress/bbpress-functions.php:413
+msgid "The request was unsuccessful. Please try again."
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:310
+msgid "Favorites are no longer active."
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:315
+msgid "Please login to make this topic a favorite."
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:332
+#: templates/bbpress/bbpress-functions.php:400
+msgid "The topic could not be found."
+msgstr ""
+
+#: templates/bbpress/bbpress-functions.php:383
+msgid "Please login to subscribe to this topic."
+msgstr ""
+
+#: templates/bbpress/content-single-topic-lead.php:18
+#: templates/bbpress/content-single-topic-lead.php:90
+msgid "Creator"
+msgstr ""
+
+#: templates/bbpress/content-single-topic-lead.php:22
+#: templates/bbpress/content-single-topic-lead.php:94
+#: templates/bbpress/loop-topics.php:19
+msgid "Topic"
+msgstr ""
+
+#: templates/bbpress/content-single-topic-lead.php:38
+#: templates/bbpress/loop-single-reply.php:16
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: templates/bbpress/content-single-user-edit.php:28
+#: templates/bbpress/content-single-user.php:29
+msgid "Subscriptions"
+msgstr ""
+
+#: templates/bbpress/content-single-user-edit.php:32
+#: templates/bbpress/content-single-user.php:31
+msgid "Favorite threads"
+msgstr ""
+
+#: templates/bbpress/content-single-user-edit.php:35
+#: templates/bbpress/content-single-user.php:32
+msgid "Created threads"
+msgstr ""
+
+#: templates/bbpress/content-single-user.php:34
+msgid "Unread Topics"
+msgstr ""
+
+#: templates/bbpress/feedback-logged-in.php:13
+msgid "You are already logged in."
+msgstr ""
+
+#: templates/bbpress/feedback-no-access.php:13
+msgid "Private"
+msgstr ""
+
+#: templates/bbpress/feedback-no-access.php:16
+msgid "You do not have permission to view this forum."
+msgstr ""
+
+#: templates/bbpress/feedback-no-forums.php:13
+msgid "Oh bother! No forums were found here!"
+msgstr ""
+
+#: templates/bbpress/feedback-no-replies.php:13
+msgid "Oh bother! No replies were found here!"
+msgstr ""
+
+#: templates/bbpress/feedback-no-topics.php:13
+msgid "Oh bother! No topics were found here!"
+msgstr ""
+
+#: templates/bbpress/form-anonymous.php:17
+msgid "Author Information"
+msgstr ""
+
+#: templates/bbpress/form-anonymous.php:17
+msgid "Your information:"
+msgstr ""
+
+#: templates/bbpress/form-anonymous.php:22
+msgid "Name (required):"
+msgstr ""
+
+#: templates/bbpress/form-anonymous.php:27
+msgid "Mail (will not be published) (required):"
+msgstr ""
+
+#: templates/bbpress/form-anonymous.php:32
+msgid "Website:"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:35 templates/bbpress/form-topic.php:43
+msgid "Now Editing &ldquo;%s&rdquo;"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:37
+msgid "Create New Forum in &ldquo;%s&rdquo;"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:37
+msgid "Create New Forum"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:47
+msgid ""
+"This forum is closed to new content, however your account still allows you "
+"to do so."
+msgstr ""
+
+#: templates/bbpress/form-forum.php:55 templates/bbpress/form-reply.php:44
+#: templates/bbpress/form-topic.php:63
+msgid "Your account has the ability to post unrestricted HTML content."
+msgstr ""
+
+#: templates/bbpress/form-forum.php:67
+msgid "Forum Name (Maximum Length: %d):"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:76
+msgid "Forum Description:"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:85 templates/bbpress/form-reply.php:67
+#: templates/bbpress/form-topic.php:111
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:94
+msgid "Forum Type:"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:103
+msgid "Status:"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:112
+msgid "Visibility:"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:121
+msgid "Parent Forum:"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:126
+msgid "(No Parent)"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:141 templates/bbpress/form-reply.php:137
+#: templates/bbpress/form-topic-merge.php:90
+#: templates/bbpress/form-topic-split.php:96
+#: templates/bbpress/form-topic.php:188
+msgid "Submit"
+msgstr ""
+
+#: templates/bbpress/form-forum.php:164
+msgid "The forum &#8216;%s&#8217; is closed to new content."
+msgstr ""
+
+#: templates/bbpress/form-forum.php:172
+msgid "You cannot create new forums at this time."
+msgstr ""
+
+#: templates/bbpress/form-forum.php:172
+msgid "You must be logged in to create new forums."
+msgstr ""
+
+#: templates/bbpress/form-protected.php:14
+msgid "Protected"
+msgstr ""
+
+#: templates/bbpress/form-reply.php:29
+msgid "Reply To: %s"
+msgstr ""
+
+#: templates/bbpress/form-reply.php:36
+msgid ""
+"This topic is marked as closed to new replies, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+
+#: templates/bbpress/form-reply.php:58
+msgid "Reply:"
+msgstr ""
+
+#: templates/bbpress/form-reply.php:76
+msgid "Tags:"
+msgstr ""
+
+#: templates/bbpress/form-reply.php:92 templates/bbpress/form-topic.php:148
+msgid "Notify the author of follow-up replies via email"
+msgstr ""
+
+#: templates/bbpress/form-reply.php:96 templates/bbpress/form-topic.php:152
+msgid "Notify me of follow-up replies via email"
+msgstr ""
+
+#: templates/bbpress/form-reply.php:111 templates/bbpress/form-topic.php:166
+msgid "Revision"
+msgstr ""
+
+#: templates/bbpress/form-reply.php:114 templates/bbpress/form-topic.php:169
+msgid "Keep a log of this edit:"
+msgstr ""
+
+#: templates/bbpress/form-reply.php:118 templates/bbpress/form-topic.php:173
+msgid "Optional reason for editing:"
+msgstr ""
+
+#: templates/bbpress/form-reply.php:160
+msgid "The topic &#8216;%s&#8217; is closed to new replies."
+msgstr ""
+
+#: templates/bbpress/form-reply.php:168 templates/bbpress/form-topic.php:211
+msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
+msgstr ""
+
+#: templates/bbpress/form-reply.php:176
+msgid "You cannot reply to this topic."
+msgstr ""
+
+#: templates/bbpress/form-reply.php:176
+msgid "You must be logged in to reply to this topic."
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:24
+msgid "Merge topic \"%s\""
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:29
+msgid ""
+"Select the topic to merge this one into. The destination topic will remain "
+"the lead topic, and this one will change into a reply."
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:30
+msgid ""
+"To keep this topic as the lead, go to the other topic and use the merge tool "
+"from there instead."
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:34
+msgid ""
+"All replies within both topics will be merged chronologically. The order of "
+"the merged replies is based on the time and date they were posted. If the "
+"destination topic was created after this one, it's post date will be updated "
+"to second earlier than this one."
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:38
+msgid "Destination"
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:42
+msgid "Merge with this topic:"
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:51
+msgid "No topics were found to which the topic could be merged to!"
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:57
+msgid "There are no other topics in this forum to merge with."
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:65
+#: templates/bbpress/form-topic-split.php:71
+msgid "Topic Extras"
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:72
+msgid "Merge topic subscribers"
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:77
+msgid "Merge topic favoriters"
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:80
+msgid "Merge topic tags"
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:86
+#: templates/bbpress/form-topic-split.php:92
+msgid "<strong>WARNING:</strong> This process cannot be undone."
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:103
+#: templates/bbpress/form-topic-split.php:109
+msgid "You do not have the permissions to edit this topic!"
+msgstr ""
+
+#: templates/bbpress/form-topic-merge.php:103
+#: templates/bbpress/form-topic-split.php:109
+msgid "You cannot edit this topic."
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:24
+msgid "Split topic \"%s\""
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:29
+msgid ""
+"When you split a topic, you are slicing it in half starting with the reply "
+"you just selected. Choose to use that reply as a new topic with a new title, "
+"or merge those replies into an existing topic."
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:33
+msgid ""
+"If you use the existing topic option, replies within both topics will be "
+"merged chronologically. The order of the merged replies is based on the time "
+"and date they were posted."
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:37
+msgid "Split Method"
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:41
+msgid "New topic in <strong>%s</strong> titled:"
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:43
+msgid "Split: %s"
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:50
+msgid "Use an existing topic in this forum:"
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:60
+msgid "No other topics found!"
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:78
+msgid "Copy subscribers to the new topic"
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:83
+msgid "Copy favoriters to the new topic"
+msgstr ""
+
+#: templates/bbpress/form-topic-split.php:86
+msgid "Copy topic tags to the new topic"
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:18
+msgid "Manage Tag: \"%s\""
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:22
+msgid "Rename"
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:25
+msgid "Leave the slug empty to have one automatically generated."
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:29
+msgid ""
+"Changing the slug affects its permalink. Any links to the old slug will stop "
+"working."
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:35
+msgid "Name:"
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:40
+msgid "Slug:"
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:45
+msgid "Update"
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:59
+#: templates/bbpress/form-topic-tag.php:73
+msgid "Merge"
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:62
+msgid "Merging tags together cannot be undone."
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:68
+msgid "Existing tag:"
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:73
+msgid ""
+"Are you sure you want to merge the \"%s\" tag into the tag you specified?"
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:88
+#: templates/bbpress/form-topic-tag.php:101
+msgid "Delete"
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:91
+msgid "This does not delete your topics. Only the tag itself is deleted."
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:94
+msgid "Deleting a tag cannot be undone."
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:95
+msgid "Any links to this tag will no longer function."
+msgstr ""
+
+#: templates/bbpress/form-topic-tag.php:101
+msgid ""
+"Are you sure you want to delete the \"%s\" tag? This is permanent and cannot "
+"be undone."
+msgstr ""
+
+#: templates/bbpress/form-topic.php:45
+msgid "Create New Topic in &ldquo;%s&rdquo;"
+msgstr ""
+
+#: templates/bbpress/form-topic.php:45
+msgid "Create New Topic"
+msgstr ""
+
+#: templates/bbpress/form-topic.php:55
+msgid ""
+"This forum is marked as closed to new topics, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+
+#: templates/bbpress/form-topic.php:77
+msgid "Topic Title (Maximum Length: %d):"
+msgstr ""
+
+#: templates/bbpress/form-topic.php:89
+msgid "Topic Type:"
+msgstr ""
+
+#: templates/bbpress/form-topic.php:102
+msgid "Topic:"
+msgstr ""
+
+#: templates/bbpress/form-topic.php:120
+msgid "Topic Tags:"
+msgstr ""
+
+#: templates/bbpress/form-topic.php:131
+msgid "Forum:"
+msgstr ""
+
+#: templates/bbpress/form-topic.php:219
+msgid "You cannot create new topics at this time."
+msgstr ""
+
+#: templates/bbpress/form-topic.php:219
+msgid "You must be logged in to create new topics."
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:14
+#: templates/bbpress/form-user-edit.php:19
+msgid "Name"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:24
+msgid "First Name"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:29
+msgid "Last Name"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:34
+msgid "Nickname"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:39
+msgid "Display name publicly as"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:49
+#: templates/bbpress/form-user-edit.php:52
+msgid "Contact Info"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:57
+msgid "Website"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:74
+#: templates/bbpress/form-user-edit.php:77
+msgid "About Yourself"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:74
+#: templates/bbpress/form-user-edit.php:77
+msgid "About the user"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:82
+msgid "Biographical Info"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:84
+msgid ""
+"Share a little biographical information to fill out your profile. This may "
+"be shown publicly."
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:91
+#: templates/bbpress/form-user-edit.php:94
+msgid "Account"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:99
+#: templates/bbpress/form-user-login.php:17
+#: templates/bbpress/form-user-register.php:23
+msgid "Username"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:101
+msgid "Usernames cannot be changed."
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:105
+#: templates/bbpress/form-user-register.php:28
+msgid "Email"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:117
+msgid ""
+"There is a pending email address change to <code>%1$s</code>. <a href=\"%2$s"
+"\">Cancel</a>"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:126
+msgid "New Password"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:129
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:132
+msgid "Type your new password again."
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:135
+msgid ""
+"Hint: The password should be at least seven characters long. To make it "
+"stronger, use upper and lower case letters, numbers and symbols like ! \" ? "
+"$ % ^ &amp; )."
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:142
+msgid "Role:"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:153
+msgid "Super Admin"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:156
+msgid "Grant this user super admin privileges for the Network."
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:169
+msgid "Save Changes"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:174
+msgid "Update Profile"
+msgstr ""
+
+#: templates/bbpress/form-user-edit.php:174
+msgid "Update User"
+msgstr ""
+
+#: templates/bbpress/form-user-login.php:14
+#: templates/bbpress/form-user-login.php:35
+msgid "Log In"
+msgstr ""
+
+#: templates/bbpress/form-user-login.php:22
+msgid "Password"
+msgstr ""
+
+#: templates/bbpress/form-user-login.php:28
+msgid "Keep me signed in"
+msgstr ""
+
+#: templates/bbpress/form-user-lost-pass.php:14
+msgid "Lost Password"
+msgstr ""
+
+#: templates/bbpress/form-user-lost-pass.php:18
+msgid "Username or Email"
+msgstr ""
+
+#: templates/bbpress/form-user-lost-pass.php:27
+msgid "Reset My Password"
+msgstr ""
+
+#: templates/bbpress/form-user-register.php:14
+msgid "Create an Account"
+msgstr ""
+
+#: templates/bbpress/form-user-register.php:17
+msgid "Your username must be unique, and cannot be changed later."
+msgstr ""
+
+#: templates/bbpress/form-user-register.php:18
+msgid ""
+"We use your email address to email you a secure password and verify your "
+"account."
+msgstr ""
+
+#: templates/bbpress/form-user-register.php:36
+msgid "Register"
+msgstr ""
+
+#: templates/bbpress/loop-forums.php:19
+msgid "Forum"
+msgstr ""
+
+#: templates/bbpress/loop-forums.php:20
+msgid "Topics"
+msgstr ""
+
+#: templates/bbpress/loop-forums.php:21 templates/bbpress/loop-replies.php:32
+#: templates/bbpress/loop-replies.php:62 templates/bbpress/loop-topics.php:21
+msgid "Replies"
+msgstr ""
+
+#: templates/bbpress/loop-forums.php:21 templates/bbpress/loop-replies.php:24
+#: templates/bbpress/loop-replies.php:58 templates/bbpress/loop-topics.php:21
+msgid "Posts"
+msgstr ""
+
+#: templates/bbpress/loop-forums.php:22 templates/bbpress/loop-topics.php:22
+msgid "Freshness"
+msgstr ""
+
+#: templates/bbpress/loop-replies.php:18 templates/bbpress/loop-replies.php:52
+msgid "Author"
+msgstr ""
+
+#: templates/bbpress/loop-single-forum.php:49
+msgid "Last post by %1$s %2$s"
+msgstr ""
+
+#: templates/bbpress/loop-single-topic.php:48
+msgid "in: <a href=\"%1$s\">%2$s</a>"
+msgstr ""
+
+#: templates/bbpress/loop-single-topic.php:79
+msgid "Last post by%1$s%2$s"
+msgstr ""
+
+#: templates/bbpress/loop-topics.php:20
+msgid "Voices"
+msgstr ""
+
+#: templates/bbpress/user-details.php:26
+msgid "Your bio"
+msgstr ""
+
+#: templates/bbpress/user-details.php:26
+msgid "Bio"
+msgstr ""
+
+#: templates/bbpress/user-details.php:31
+msgid "Joined: "
+msgstr ""
+
+#: templates/bbpress/user-details.php:35
+msgid "Status: "
+msgstr ""
+
+#: templates/bbpress/user-details.php:44
+msgid "Forum participant"
+msgstr ""
+
+#: templates/bbpress/user-details.php:48
+msgid "Forum moderator"
+msgstr ""
+
+#: templates/bbpress/user-details.php:61
+msgid "Homepage: "
+msgstr ""
+
+#: templates/bbpress/user-favorites.php:17
+msgid "Favorite Forum Topics"
+msgstr ""
+
+#: templates/bbpress/user-favorites.php:30
+msgid "You currently have no favorite topics."
+msgstr ""
+
+#: templates/bbpress/user-favorites.php:30
+msgid "This user has no favorite topics."
+msgstr ""
+
+#: templates/bbpress/user-subscriptions.php:21
+msgid "Subscribed Forum Topics"
+msgstr ""
+
+#: templates/bbpress/user-subscriptions.php:34
+msgid "You are not currently subscribed to any topics."
+msgstr ""
+
+#: templates/bbpress/user-subscriptions.php:34
+msgid "This user is not currently subscribed to any topics."
+msgstr ""
+
+#: templates/bbpress/user-topics-created.php:17
+msgid "Forum Topics Created"
+msgstr ""
+
+#: templates/bbpress/user-topics-created.php:30
+msgid "You have not created any topics."
+msgstr ""
+
+#: templates/bbpress/user-topics-created.php:30
+msgid "This user has not created any topics."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Newsfront bbPress"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://radiumthemes.com/plugins/newsfront-bbpress/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Provides basic compaitibility between bbPress and the <a href=\"http://"
+"themeforest.net/item/newsfront-blog-news-editorial-ecommerce-wordpress-"
+"theme/15182108?ref=RadiumThemes\">Newsfront Theme</a>."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Franklin Gitonga"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.radiumthemes.com"
+msgstr ""

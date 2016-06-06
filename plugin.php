@@ -44,6 +44,7 @@ class bbpnewsfront_init {
         register_activation_hook( __FILE__,  array( $this, 'activation'    ) );
 
         add_action( 'radium_init', array( $this, 'radium_check' ) );
+        add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
 
     }
 
@@ -57,8 +58,6 @@ class bbpnewsfront_init {
         if ( ! function_exists( 'bbpress' ) ) return;
 
         // Load the text domain for translations
-        add_action( 'init', array( $this, 'pre_init' ) );
-
         require_once( dirname( __FILE__ )  . '/integration/templates.php' );
         require_once( dirname( __FILE__ )  . '/integration/layout.php' );
         require_once( dirname( __FILE__ )  . '/integration/breadcrumbs.php' );
@@ -78,12 +77,38 @@ class bbpnewsfront_init {
     function activation() {}
 
     /**
-     * Load the textdomain so we can support other languages
+     * Load the plugin text domain for translation.
      *
-     * @since 1.0.0
+     * With the introduction of plugins language packs in WordPress loading the textdomain is slightly more complex.
+     *
+     * We now have 3 steps:
+     *
+     * 1. Check for the language pack in the WordPress core directory
+     * 2. Check for the translation file in the plugin's language directory
+     * 3. Fallback to loading the textdomain the classic way
+     *
+     * @since    1.0.0
+     * @return boolean True if the language file was loaded, false otherwise
      */
-    function pre_init() {
-        load_plugin_textdomain( 'newsfront-bbpress', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+    public function load_plugin_textdomain() {
+
+        $lang_dir       = trailingslashit( dirname( plugin_basename( __FILE__ ) ) ) . 'languages/';
+        $lang_path      = trailingslashit( plugin_dir_path( __FILE__ ) ) . 'languages/';
+        $locale         = apply_filters( 'plugin_locale', get_locale(), 'newsfront-bbpress' );
+        $mofile         = $locale . '.mo';
+        $glotpress_file = WP_LANG_DIR . '/plugins/newsfront-bbpress/' . $mofile;
+
+        // Look for the GlotPress language pack first of all
+        if ( file_exists( $glotpress_file ) ) {
+            $language = load_textdomain( 'newsfront-bbpress', $glotpress_file );
+        } elseif ( file_exists( $lang_path . $mofile ) ) {
+            $language = load_textdomain( 'newsfront-bbpress', $lang_path . $mofile );
+        } else {
+            $language = load_plugin_textdomain( 'newsfront-bbpress', false, $lang_dir );
+        }
+
+        return $language;
+
     }
 
 }
