@@ -28,7 +28,7 @@ function radium_bbpress_post_actions() {
         remove_action( 'radium_sidebar', 'radium_do_sidebar'     );
 
         // Load up the Radium-bbPress sidebar
-        add_action( 'radium_sidebar', 'radium_bbpress_load_forum_sidebar' );
+        add_action( 'radium_sidebar', 'radium_do_bbpress_sidebar' );
 
         /**
          * Remove Radium post content

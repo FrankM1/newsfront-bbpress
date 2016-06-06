@@ -17,13 +17,6 @@ add_action( 'radium_register_after_default_widget_areas', 'radium_bbpress_init_s
  */
 function radium_bbpress_init_sidebars() {
 
-    $site_layout = radium_site_layout();
-
-    // Don't load sidebar on pages that don't need it
-    if ( 'full-width-content' === $site_layout ) {
-        return;
-    }
-
     radium_register_widget_area( array(
         'id'          => 'sidebar-bbpress',
         'name'        => __( 'Forum Sidebar', 'bbpress-radium-extend' ),
@@ -37,14 +30,7 @@ function radium_bbpress_init_sidebars() {
   *
   * @since 1.0.0
   */
-function radium_bbpress_load_forum_sidebar() {
-
-    $site_layout = radium_site_layout();
-
-    // Don't load sidebar on pages that don't need it
-    if ( 'full-width-content' === $site_layout ) {
-        return;
-    }
+function radium_bbpress_widget_area_content() {
 
      echo '<div class="widget widget_text"><div class="widget-wrap">';
 
@@ -56,5 +42,22 @@ function radium_bbpress_load_forum_sidebar() {
              printf( __( 'This is the Forum Sidebar Widget Area. You can add content to this area by visiting your <a href="%s">Widgets Panel</a> and adding new widgets to this area.', 'bbpress-radium-extend' ), admin_url( 'widgets.php' ) );
          echo '</p></div>';
      echo '</div></div>';
+
+ }
+
+ /**
+  * Echo primary sidebar default content.
+  *
+  * Only shows if sidebar is empty, and current user has the ability to edit theme options (manage widgets).
+  *
+  * @since 1.0.0
+  *
+  * @uses radium_default_widget_area_content() Template for default widget are content.
+  */
+ function radium_do_bbpress_sidebar() {
+
+     if ( ! dynamic_sidebar( 'sidebar-bbpress' ) && current_user_can( 'edit_theme_options' ) ) {
+         radium_bbpress_widget_area_content( esc_html__( 'Forum Sidebar Widget Area', 'newsfront' ) );
+     }
 
  }
